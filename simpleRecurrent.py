@@ -1,4 +1,10 @@
 from blocks.bricks.recurrent import BaseRecurrent, recurrent
+from theano import tensor
+from blocks import initialization
+from blocks.bricks import Identity
+from blocks.bricks.recurrent import SimpleRecurrent
+import theano
+import numpy 
 
 class FeedbackRNN(BaseRecurrent):
      def __init__(self, dim, **kwargs):
